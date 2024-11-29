@@ -11,6 +11,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: normal;
+    /* background: linear-gradient(to right, #111, #333); */
+    background: linear-gradient(to right, #333, #555, #777);
 }
 
 header {
@@ -19,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 5px rgba(33, 33, 33, 0.598);
     position: fixed;
     width: 100%;
     top: 0;
@@ -50,14 +52,11 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* nav li a:hover {
-    background-color: #bdbabd;
-    color: rgb(89, 124, 213);
-} */
-
 nav li a:hover {
-    background-color: #a4a4a4;
-    color: #007bff
+    background: linear-gradient(to right, #333, #555, #777);
+    color: #007bff;
+    font-weight: 200;
+    border-radius: 10px;
 }
 
 .image-home {
@@ -75,15 +74,8 @@ nav li a:hover {
 }
 
 
-
-
-
-
-
-
-
 /* Estilos do container principal (envolve todas as sections) */
-.main-container {
+.container {
     min-height: 100%;
     /* Garante que o conteúdo ocupe pelo menos toda a altura da tela */
     padding: 20px 80px 0px 80px;
@@ -91,7 +83,6 @@ nav li a:hover {
     box-sizing: border-box;
     /* Inclui o padding no cálculo da largura e altura */
 }
-
 
 .sessao {
     line-height: 1.6;
@@ -116,6 +107,7 @@ h3 {
     /* color: rgb(255, 166, 0); */
     color: rgb(255, 200, 0);
     font-weight: normal;
+    margin: 5px 0px;
 }
 
 .list {
@@ -127,46 +119,56 @@ h3 {
     margin-left: 10px;
 }
 
-
 .rodape {
     background-color: #333;
     padding: 20px 60px;
     text-align: justify;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .contato {
-    color: rgb(249, 247, 247);
+    color: #0044ff;
     padding: 20px;
-}
-
-.contato p {
-    padding-left: 2px;
     line-height: 1.7;
 }
 
-/* Estilos para o footer */
-footer {
-    text-align: center;
-    /* Alinha o texto ao centro */
-    padding: 15px;
-    /* Espaçamento interno no footer */
-    background-color: #333;
-    /* Cor de fundo do footer */
-    color: #595757;
-    /* Cor do texto do footer */
-    position: relative;
-    /* Não fixo, estará no fim da página */
-    width: 100%;
-    /* Garante que o footer ocupe toda a largura */
-    bottom: 0;
-    /* Alinha o footer ao fundo */
-
-
+.contato p {
+    color: rgb(249, 247, 247);
 }
 
-/* Estilo para o texto dentro do footer */
-footer p {
+.contato-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 15px 0px;
     margin: 0;
-    /* Remove as margens do parágrafo */
+}
+
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-lista li img {
+    width: 30px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px;
+}
+
+.contato-lista li a {
+    text-decoration: none;
+    color: rgb(249, 247, 247);
+}
+
+footer {
+    text-align: center;
+    /* padding: 15px; */
+    color: #595757;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
 }
