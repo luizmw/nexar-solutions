@@ -179,17 +179,19 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: grid;
         width: 100%;
         text-align: center;
     }
 
     nav li {
-        margin: 5px 0;
+        /* margin: 5px 0; */
     }
 
     .image-home {
-        padding: 0px 20px;
+        padding: 20px 20px 0px 20px;
+        margin-top: 5px;
+
     }
 
     .container {
@@ -199,24 +201,25 @@ footer {
     .contato-lista {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start; /* Ajusta para alinhar os itens no topo */
+        justify-content: flex-start;
+        /* Ajusta para alinhar os itens no topo */
         list-style: none;
         padding: 15px 0px;
         margin: 0;
     }
-    
+
     .contato-lista li {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
     }
-    
+
     .contato-lista li img {
         width: 25px;
         height: auto;
         margin-right: 10px;
     }
-    
+
     .contato-lista li a {
         text-decoration: none;
         color: rgb(249, 247, 247);
